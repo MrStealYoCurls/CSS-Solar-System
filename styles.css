@@ -1,0 +1,331 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+    background-color: #212121;
+}
+
+.solar-system-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    overflow: hidden;
+}
+
+.solar-system-container {
+    position: relative;
+    width: 3000px;
+    height: 3000px;
+    transform: scaleX(5);
+}
+
+.sun {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    box-shadow: 0 0 20px #FDCBA3FF, 0 0 30px #B8A01AFF;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: scaleX(0.2) translate(-250%, -50%);
+}
+#sun {
+    height: 300px;
+    position: absolute;
+}
+
+.orbit {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform-origin: center;
+}
+.planet-index {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.Mercury-Orbit {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: transparent;
+    animation: Orbit 10s infinite linear;
+}
+.Mercury {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    transform: scaleX(0.2);
+}
+#Mercury {
+    height: 5px;
+}
+
+.Mercury-route {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+#Mercury-container {
+    animation: correct 10s infinite linear;
+    width: 5px;
+    height: 5px;
+}
+#Mercury-index {
+    animation: hidePlanet 10s infinite linear;
+}
+
+
+.Venus-Orbit {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: transparent;
+    animation: Orbit 24s infinite linear;
+}
+
+.Venus {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    transform: scaleX(0.2);
+}
+#Venus {
+    height: 12px;
+}
+.Venus-route {
+    width: 50%;
+    height: 50%;
+    position: absolute;
+}
+#Venus-container {
+    animation: correct 24s infinite linear;
+    width: 12px;
+    height: 12px;
+}
+#Venus-index {
+    animation: hidePlanet 24s infinite linear;
+}
+
+.Earth-Orbit {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-color: transparent;
+    animation: Orbit 40s infinite linear;
+    animation-delay: -20s;
+}
+.Earth {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    transform: scaleX(0.2);
+}
+#Earth {
+    height: 20px;
+}
+.Earth-route {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+#Earth-container {
+    animation: correct 40s infinite linear;
+    animation-delay: -20s;
+    width: 20px;
+    height: 20px;
+}
+
+.Mars-Orbit {
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    background-color: transparent;
+    animation: Orbit 75s infinite linear;
+    animation-delay: -60s;
+}
+.Mars {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    transform: scaleX(0.2);
+}
+#Mars {
+    height: 8px;
+}
+.Mars-route {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+#Mars-container {
+    animation: correct 75s infinite linear;
+    animation-delay: -60s;
+    width: 8px;
+    height: 8px;
+}
+
+.Jupiter-Orbit {
+    width: 1650px;
+    height: 1650px;
+    border-radius: 50%;
+    background-color: transparent;
+    animation: Orbit 480s infinite linear;
+    animation-delay: -200s;
+}
+.Jupiter {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    transform: scaleX(0.2);
+}
+#Jupiter {
+    height: 100px;
+}
+.Jupiter-route {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+#Jupiter-container {
+    animation: correct 480s infinite linear;
+    animation-delay: -200s;
+    width: 100px;
+    height: 100px;
+}
+
+.Saturn-Orbit {
+    width: 2000px;
+    height: 2000px;
+    border-radius: 50%;
+    background-color: transparent;
+    animation: Orbit 1200s infinite linear;
+    animation-delay: -100s;
+}
+.Saturn {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    transform: scaleX(0.2);
+}
+#Saturn {
+    height: 100px;
+}
+.Saturn-route {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+#Saturn-container {
+    animation: correct 1200s infinite linear;
+    animation-delay: -100s;
+    width: 100px;
+    height: 100px;
+}
+
+.Uranus-Orbit {
+    width: 6000px;
+    height: 6000px;
+    border-radius: 50%;
+    background-color: transparent;
+    animation: Orbit 3360s infinite linear;
+    animation-delay: -300s;
+
+}
+.Uranus {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    transform: scaleX(0.2);
+}
+#Uranus {
+    height: 50px;
+}
+.Uranus-route {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+#Uranus-container {
+    animation: correct 3360s infinite linear;
+    animation-delay: -300s;
+    width: 50px;
+    height: 50px;
+}
+
+.Neptune-Orbit {
+    width: 8000px;
+    height: 8000px;
+    border-radius: 50%;
+    background-color: transparent;
+    animation: Orbit 6600s infinite linear;
+    animation-delay: -3800s;
+}
+.Neptune {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    transform: scaleX(0.2);
+}
+#Neptune {
+    height: 50px;
+}
+.Neptune-route {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+#Neptune-container {
+    animation: correct 6600s infinite linear;
+    animation-delay: -3800s;
+    width: 50px;
+    height: 50px;
+}
+@keyframes Orbit {
+    0% {
+        transform: translate(-50%, -50%) rotateZ(0deg);
+    }
+    100% {
+        transform: translate(-50%, -50%) rotateZ(360deg);
+    }
+}
+
+@keyframes correct  {
+    0% {
+        transform: rotateZ(360deg);
+    }
+    100% {
+        transform: rotateZ(0deg);
+    }
+}
+
+@keyframes hidePlanet  {
+    0% {
+        z-index: -999;
+    }
+    50% {
+        z-index: 999;
+    }
+}
+
+.label {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: none;
+    background-color: #fff;
+    color: #000;
+    padding: 5px;
+    border-radius: 3px;
+    white-space: nowrap;
+    font-size: 12px;
+}
+
+.planet:hover .label {
+    display: block;
+}
